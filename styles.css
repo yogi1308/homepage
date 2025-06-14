@@ -157,7 +157,7 @@ img {
 
 .profile-container > p {
   position: absolute;
-  transform: translateY(-75%);
+  transform: translateY(-85%);
   width: 100%;
   font-size: 3rem;
 }
@@ -177,8 +177,9 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  max-width: 50vw;
   gap: 1.25rem;
+  min-width: 25vw;
 }
 
 footer > img {
@@ -207,4 +208,74 @@ footer > img {
 
 footer > div > div.profile-links {
   padding: 0px;
+}
+
+body > footer > div > div:nth-child(5) > svg {
+  width:2.25rem;
+  min-width: 2.25rem;
+}
+
+body > footer > div > div:nth-child(5) {
+  align-items: center;
+}
+
+body > footer > div > div:nth-child(5) > p {
+  word-break: break-all;
+}
+
+main {
+  padding: 5rem;
+}
+
+.my-work {
+  font-family: 'samurai', 'Courier New', Courier, monospace;
+  font-size: 3rem;
+}
+
+.work-cards {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin-top: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.3);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1.75rem 3.5rem 1.75rem;
+}
+
+.project-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+body > main > div > div > div > div.project-name > div > * {
+  width: 1.5rem;
+  max-width: 2rem;
+}
+
+.card-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-name > h2 {
+  font-size: 1.25rem;
+  font-family: 'samurai', 'Courier New', Courier, monospace;
+  font-weight: 10;
+}
+
+.work-details {
+  font-size: 1rem;
+  color: rgb(121, 118, 118);
 }
