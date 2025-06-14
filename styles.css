@@ -128,21 +128,25 @@ img {
   font-family: 'samurai', 'Courier New', Courier, monospace;
   background: linear-gradient(
     to bottom,
-    #87aecc 0%,
+    #3886c2 0%,
     #fff 50%,
-    #87aecc 100%
+    #3886c2 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; /* For Firefox */
   color: transparent;
-  
+  /* text-shadow: 
+    1px 0px 1px red,
+    -1px 0px 1px red,
+    0px 1px 1px red,
+    0px -1px 1px red; */
 }
 
 .about-me > p {
   font-family: 'Roboto', 'Courier New', Courier, monospace;
   font-size: 1.25rem;
-  color: #575655;
+  color: rgb(121, 118, 118);
 }
 
 .profile-container {
@@ -191,9 +195,9 @@ footer > img {
   font-size: 3rem;
   background: linear-gradient(
     to bottom,
-    #87aecc 0%,
+    #3886c2 0%,
     #fff 60%,
-    #87aecc 100%
+    #3886c2 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
