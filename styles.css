@@ -8,6 +8,12 @@
     src: url(./assets/Roboto/static/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'samurai';
+    src: url(./assets/orewa/OREWA-PersonalUse.otf);
+}
+
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -75,7 +81,7 @@ img {
 }
 
 .about-me {
-  background-color: white;
+  background: linear-gradient(to top, #c0ddf3, #3294de);
   height: fit-content;
   align-self: center;
   box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.3);
@@ -119,7 +125,18 @@ img {
 .about-me > h1, .profile-container > p {
   padding-bottom: 1rem;
   font-size: 3rem;
-  font-family: 'Caveat Brush', 'Courier New', Courier, monospace;
+  font-family: 'samurai', 'Courier New', Courier, monospace;
+  background: linear-gradient(
+    to bottom,
+    #87aecc 0%,
+    #fff 50%,
+    #87aecc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: transparent;
+  
 }
 
 .about-me > p {
@@ -170,8 +187,18 @@ footer > img {
 }
 
 .contact > h1 {
-  font-family: 'Caveat Brush', 'Courier New', Courier, monospace;
+  font-family: 'samurai', 'Courier New', Courier, monospace;
   font-size: 3rem;
+  background: linear-gradient(
+    to bottom,
+    #87aecc 0%,
+    #fff 60%,
+    #87aecc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: transparent;
 }
 
 footer > div > div.profile-links {
