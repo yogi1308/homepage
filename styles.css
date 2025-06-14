@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   overflow-x: hidden;
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
 }
 
 header {
@@ -67,7 +69,7 @@ header {
 }
 
 img {
-  width: 200%; /* or any desired width */
+  width: 100%; /* or any desired width */
   height: auto; /* Maintains aspect ratio */
   object-fit: contain; /* or cover */
 }
@@ -92,7 +94,7 @@ img {
 }
 
 .profile-img-and-about-me {
-  padding: 3rem;
+  padding: 5rem;
   display: flex;
   align-items: center;
 }
@@ -137,4 +139,41 @@ img {
   transform: translateY(-75%);
   width: 100%;
   font-size: 3rem;
+}
+
+footer {
+  background: linear-gradient(to top, #9bcaef, #5ba9e6);
+  display: flex;
+  padding: 3rem 5rem;
+  color: white;
+  gap: 2rem;
+}
+
+.phone {
+  transform: rotate(-130deg);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  gap: 1.25rem;
+}
+
+footer > img {
+  width: 60%;
+}
+
+.contact > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact > h1 {
+  font-family: 'Caveat Brush', 'Courier New', Courier, monospace;
+  font-size: 3rem;
+}
+
+footer > div > div.profile-links {
+  padding: 0px;
 }
