@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Caveat Brush';
+    src: url(./assets/Caveat_Brush/CaveatBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/Roboto/static/Roboto-Regular.ttf);
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-content: center;
+}
+
+img {
+  width: 200%; /* or any desired width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* or cover */
+}
+
+.about-me {
+  background-color: white;
+  height: fit-content;
+  align-self: center;
+  box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.3);
+  padding: 2rem;
+  width: 150%;
+}
+
+.background {
+  position: absolute;
+  background: linear-gradient(to bottom, #c0ddf3, #3294de);
+  isolation: isolate;
+  z-index: -1;
+  width: 100vw;
+  height: 50vh;
+  transform: scaleY(2) scaleX(1.5) rotate(-10deg) translateY(-2rem);
+}
+
+.profile-img-and-about-me {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile-links {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-self: right;
+  gap: 0.65rem;
+  padding-right: 15px;
+}
+
+.profile-links > img {
+  width: 2.25rem;
+}
+
+.profile-img {
+  box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.about-me > h1, .profile-container > p {
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-family: 'Caveat Brush', 'Courier New', Courier, monospace;
+}
+
+.about-me > p {
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  color: #575655;
+}
+
+.profile-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.profile-container > p {
+  position: absolute;
+  transform: translateY(-75%);
+  width: 100%;
+  font-size: 3rem;
+}
