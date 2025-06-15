@@ -281,7 +281,71 @@ body > main > div > div > div > div.project-name > div > * {
   color: rgb(121, 118, 118);
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 800px) {
+  .profile-img-and-about-me {
+    display: block;
+  }
+  .profile-container {
+    width: 40vw;
+    z-index: 5;
+  }
+  .about-me {
+    transform: translateY(-70%);
+  }
+} */
+
+@media (max-width: 800px) and (min-width: 500px) {
+  .profile-img-and-about-me {
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .profile-img {
+    content: url(assets/pxfuel-Copy.jpg);
+    float: left;
+    width: 40%;
+    margin-right: 4rem;
+    transform: translate(2.5%, -12.5%) scale(1.3);
+  }
+  .about-me {
+    width: 100%;
+    float: none;
+  }
+  .profile-container > p {
+    transform: translate(5%, -100%);
+    background: none;
+    color: white;
+    -webkit-text-fill-color: white;
+    text-shadow: 
+    1px 0px 1px black,
+    -1px 0px 1px black,
+    0px 1px 1px black,
+    0px -1px 1px black;
+  }
+  body > footer > img {
+    content: url(assets/snapedit_1749954434884.jpeg);
+  }
+  footer {
+    padding-right: 2.5rem;
+  }
+  footer > img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+    body > footer > img {
+    content: url(assets/snapedit_1749954434884.jpeg);
+  }
+  footer {
+    padding-right: 2.5rem;
+  }
+  footer > img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
   .profile-img-and-about-me {
     flex-direction: column;
   }
@@ -334,6 +398,9 @@ body > main > div > div > div > div.project-name > div > * {
   }
   body > header > div.profile-img-and-about-me > div.about-me > h1 {
     font-size: 2.5rem;
+  }
+  body > footer > img {
+    content: url(assets/snapedit_1749955915898.jpeg);
   }
 }
 
