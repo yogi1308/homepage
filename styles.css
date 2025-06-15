@@ -63,8 +63,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: 'Roboto', 'Courier New', Courier, monospace;
   font-size: 1.25rem;
 }
@@ -235,7 +236,7 @@ main {
 .work-cards {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   margin-top: 1rem;
 }
 
@@ -278,4 +279,70 @@ body > main > div > div > div > div.project-name > div > * {
 .work-details {
   font-size: 1rem;
   color: rgb(121, 118, 118);
+}
+
+@media (max-width: 760px) {
+  .profile-img-and-about-me {
+    flex-direction: column;
+  }
+  .about-me {
+    transform-origin: top;
+    padding-top: 10rem;
+    transform: translateY(-9rem);
+    z-index: -1;
+    width: 112%;
+  }
+  .profile-container > p, body > main > h1 {
+    font-size: 2rem;
+  }
+  body > header > div.profile-img-and-about-me > div.about-me > p {
+    font-size: 1.25rem;
+  }
+  body > header > div.profile-img-and-about-me > div.about-me > h1 {
+    padding-bottom: 0px;
+  }
+  main {
+    transform: translateY(-16rem);
+    padding-bottom: 0px;
+  }
+  .work-cards {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  footer {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .contact {
+    min-width: 100%;
+    align-items: center;
+    padding: 0px 1.5rem;
+  }
+  footer > img {
+    width: 100%;
+  }
+  body > footer > div > div:nth-child(4), body > footer > div > div:nth-child(5) {
+    align-self: start;
+  }
+  body > footer > div > p:nth-child(6) {
+    align-self: flex-start;
+  }
+  body > footer > div > p:nth-child(3), body > footer > div > p:nth-child(2), footer > img {
+    width: 100%;
+  }
+  .profile-links {
+    justify-self: center;
+  }
+  body > header > div.profile-img-and-about-me > div.about-me > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 0px 2rem ;
+    transform: translateY(-10rem);
+  }
+  .about-me {
+    width: 150%;
+  }
 }
