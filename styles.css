@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: 'Roboto', 'Courier New', Courier, monospace;
   font-size: 1.25rem;
 }
@@ -306,6 +306,8 @@ body > main > div > div > div > div.project-name > div > * {
     width: 40%;
     margin-right: 4rem;
     transform: translate(2.5%, -12.5%) scale(1.3);
+    position: relative;
+    z-index: 1;
   }
   .about-me {
     width: 100%;
@@ -321,6 +323,7 @@ body > main > div > div > div > div.project-name > div > * {
     -1px 0px 1px black,
     0px 1px 1px black,
     0px -1px 1px black;
+    z-index: 2;
   }
   body > footer > img {
     content: url(assets/snapedit_1749954434884.jpeg);
@@ -330,6 +333,9 @@ body > main > div > div > div > div.project-name > div > * {
   }
   footer > img {
     width: 40%;
+  }
+  .about-me {
+    animation: none;
   }
 }
 
@@ -411,5 +417,49 @@ body > main > div > div > div > div.project-name > div > * {
   }
   .about-me {
     width: 150%;
+  }
+}
+
+.background {
+  animation: move-background 4s linear 0s infinite alternate;
+}
+
+@keyframes move-background {
+  to {
+    transform: scaleY(2) scaleX(1.5) rotate(-10deg) translateY(-2.5rem);
+  }
+}
+
+.transition, .phone, .cards{
+  transition: transform 0.25s ease-out;
+}
+.transition:hover {
+  transform: scale(1.2);
+}
+
+.phone:hover {
+  transform: rotate(-130deg) scale(1.2);
+}
+
+.cards:hover {
+  transform: translateY(-10px)
+}
+
+.footer-img {
+  box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.3), -8px -8px 12px 0px rgba(0,0,0,0.3);
+}
+
+.profile-links > img, .card-links > *, .contact > div > svg {
+  cursor: pointer;
+}
+
+.about-me {
+  animation: fadeInSlide 1s ease-in both;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
 }
